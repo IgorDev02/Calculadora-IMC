@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor - Calculadora IMC</title>
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Calculadora IMC</h1>
+        </div>       
+
+        <div class="inputs">
+            <label for="Nome">Nome</label>
+            <input id="nome" type="text" placeholder="Coloque seu nome" required>
+        </div>
+        <div class="inputs">
+            <label for="Altura">Altura (cm)</label>
+            <input id="altura" type="number" placeholder="Ex: 1,65" step="0.01" required>
+        </div>
+        <div class="inputs">
+            <label for="Peso">Peso (kg)</label>
+            <input id="peso" type="number" placeholder="Ex: 65,3" step="0.01" required>
+        </div>
+
+        <button id="button">Calcular</button>  
+
+        <div class="resultado" id="resultado"></div>
+    </div>
+
+    <div class="container-info">
+        <span>Desenvolvido por:
+            <a class="insta" href="https://www.instagram.com/igor_deyvidd/" target="_blank">Igor Deyvid Barbosa</a>
+        </span>       
+    </div>
+
+    <script src="./calc.js"></script>
+</body>
+</html>
